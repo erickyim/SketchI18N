@@ -8,7 +8,7 @@ var onRun = function(context) {
         language = NSUserDefaults.standardUserDefaults().objectForKey("AppleLanguages").objectAtIndex(0);
 
     for(;;){
-        languagePath = resourcesPath + "/Contents/Resources/i18n/" + language + ".json";
+        languagePath = resourcesPath + "/Contents/Resources/i18n/" + 'zh-Hans' + ".json";
         if (NSFileManager.defaultManager().fileExistsAtPath(languagePath)) {
             break;
         }
